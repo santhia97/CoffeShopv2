@@ -1,0 +1,45 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "sites_ContosoCoffee_Website_UKS_name": {
+            "value": null
+        },
+        "sites_ContosoCoffee_WebSite_USE_name": {
+            "value": null
+        },
+        "serverfarms_ContosoCoffee_ASP_USE_name": {
+            "value": null
+        },
+        "storageAccounts_contosocoffee23_name": {
+            "value": null
+        },
+        "sites_ContosoCoffee_ImageSlider_EUN_name": {
+            "value": null
+        },
+        "profiles_ContosoCoffee_Frontdoor_UKS_name": {
+            "value": null
+        },
+        "serverfarms_ContosoCoffee_WebSite_UKS_name": {
+            "value": null
+        },
+        "serverfarms_ContosoCoffee_APS_ImageSlider_name": {
+            "value": null
+        },
+        "components_ContosoCoffee_ImageSlider_UKS_name": {
+            "value": null
+        },
+        "actionGroups_Application_Insights_Smart_Detection_name": {
+            "value": null
+        },
+        "smartdetectoralertrules_failure_anomalies___contosocoffee_imageslider_uks_name": {
+            "value": null
+        },
+        "frontdoorwebapplicationfirewallpolicies_DefaultWebAppWaf03eee9c4fe6c4f7796339d7509aaacd5_name": {
+            "value": null
+        },
+        "workspaces_DefaultWorkspace_faf4307d_2cba_4b30_b014_931734224924_SUK_externalid": {
+            "value": null
+        }
+    }
+}
