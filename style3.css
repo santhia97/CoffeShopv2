@@ -33,22 +33,23 @@ img{
 
 
 body {
-    color: var (var(--bg-color));
-    
+    color: var(--text-color);  
 }
 
 header {
     position: fixed;
     width: 100%;
     top:0;
-    right:0
+    right:0;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 18px 100px;
     transition: 0.5s linear;
+    background: var(--text-color);
 }
+
 
 header.shadow{
     background: var(--text-color);
@@ -89,8 +90,7 @@ header.shadow{
     cursor: pointer;
     z-index: 10000;
     display: flex;
-    column-gap: 0.8rem;
-    
+    column-gap: 0.8rem; 
 }
 
 
@@ -98,7 +98,7 @@ header.shadow{
     color: var(--bg-color);
 }
 
-/*hover farge*/
+/*hover color for the menubar*/
 .header-icon .bx:hover{
     color: var(--main-color);
 }
@@ -111,7 +111,6 @@ header.shadow{
     cursor: pointer;
     /*Fjerner hamburger menubar icon*/
     display: none;
-
 }
 
 .search-box{
@@ -142,7 +141,6 @@ header.shadow{
 .search-box input::placeholder {
     font-size: 1rem;
     font-weight: 500;
-
 }
 
 
@@ -157,9 +155,7 @@ header.shadow{
     grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
     align-items: center;
     gap: 1.5rem;
-
 }
-
 
 
 .home-text h1{
@@ -173,14 +169,13 @@ header.shadow{
     font-size: 0.938rem;
     color:var(--bg-color);
     margin: 0.5rem 0 1.4rem;
-    
 }
 
 
 .btn{
     padding: 10px 40px;
     border-radius: 0.3rem;
-    background-position: var(--main-color);
+    background: var(--main-color);
     color: var(--bg-color);
     font-weight: 500;
 }
@@ -195,7 +190,6 @@ header.shadow{
     grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
     align-items: center;
     gap: 1.5rem;
-
 }
 
 .about-img img{
@@ -210,7 +204,6 @@ header.shadow{
 .about-text p{
     font-size: 0.938rem;
     margin: 0.5rem 0 1.1rem;
-
 }
 
 /*Products part*/
@@ -451,7 +444,7 @@ header.shadow{
 
     .navbar{
         position: absolute;
-        top:100%;
+        top:-570px;
         left:0;
         right:0;
         display: flex;
@@ -470,5 +463,52 @@ header.shadow{
     .navbar a:hover{
         color: var(--bg-color);
 
+    }
+    .navbar.active{
+        top: 100%;
+
+    }
+
+    .about{
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px){
+    header{
+        padding: 9px 4%;
+    }
+
+    .logo img{
+        width: 45px;
+    }
+
+    .home-text{
+        padding-top: 15px;
+    }
+
+    .home-text h1{
+        font-size: 1.4rem;
+    }
+
+    .home-text p{
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+
+    .about img{
+        order: 2;
+    }
+
+    .about-text{
+        text-align: center;
+    }
+
+    .aboyt-text h2{
+        font-size: 1.2rem;
+    }
+
+    .heading h2{
+        font-size: 1.2rem;
     }
 }
